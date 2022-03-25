@@ -1,0 +1,3 @@
+docker/mysql/var_lib_mysql
+.env
+!html/39liveapi/.env
