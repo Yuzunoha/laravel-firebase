@@ -33,3 +33,4 @@ Route::group(['prefix' => 'v1'], function () {
     Route::post('/wallet/point/request', 'WalletController@createPointToYenRequest');
   });
 });
+Route::get('loginAnonymous', 'FirebaseTestController@loginAnonymous');
