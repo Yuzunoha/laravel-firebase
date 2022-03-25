@@ -17,5 +17,8 @@ class FirebaseTestController extends Controller
   public function loginAnonymous()
   {
     $anonymous = $this->auth->signInAnonymously();
+    print_r([$anonymous->idToken(), $anonymous->firebaseUserId()]);
+
+    return view('welcome');
   }
 }
